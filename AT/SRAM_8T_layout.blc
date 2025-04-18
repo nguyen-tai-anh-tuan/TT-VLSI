@@ -1,0 +1,5 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"SRAM_8T_layout layout NguyenTaiAnhTuan" "SRAM_8T_layout schematic NguyenTaiAnhTuan" "nmos1v(MOS)" "pmos1v(MOS)"
+Devices filtered from layout
+"TIE"

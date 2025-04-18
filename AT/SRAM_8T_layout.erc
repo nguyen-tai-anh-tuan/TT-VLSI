@@ -1,0 +1,17 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'SRAM_8T_Layout layout NguyenTaiAnhTuan':
+  info: Assign pin label "gnd" at (4.9700, 3.1500) to layer `Metal1_p'.
+  info: Assign pin label "Q" at (2.9600, 5.7700) to layer `Metal1_p'.
+  info: Assign pin label "WBL" at (2.0000, 7.5500) to layer `Metal1_p'.
+  info: Assign pin label "Q~" at (6.4900, 6.0200) to layer `Metal1_p'.
+  info: Assign pin label "WBLB" at (7.4400, 5.2700) to layer `Metal1_p'.
+  info: Assign pin label "WWL" at (3.7800, 9.9900) to layer `Metal1_p'.
+  info: Assign pin label "vdd" at (4.9300, 9.0400) to layer `Metal1_p'.
+  info: Assign pin label "RBL" at (8.5400, 6.8200) to layer `Metal1_p'.
+  info: Assign pin label "RWL" at (7.9100, 7.5500) to layer `Metal1_p'.
+  info: Assign pin label "OUTPUT" at (10.5800, 6.1500) to layer `Metal1_p'.
+
+***** End of Label Report *****
+

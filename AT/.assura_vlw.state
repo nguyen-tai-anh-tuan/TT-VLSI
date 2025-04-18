@@ -1,0 +1,32 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/11 02:43 (sjlin80) $
+; sub-version 4.1_USR2_HF8
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura VLW saved state
+;----------------------------------------------------------------------------
+
+vuiLayerListOrder  =  "Alphabetical"
+vuiLayerList  = '(
+		("L10595" 2966 "L10595 = geomNodeRelate( ndiff_conn psubstrate conn )" 0 15 t "y0 (drawing)" t)
+		("L12421" 2981 "L12421 = geomNodeRelate( pdiff_conn psubstrate conn )" 0 17 t "y1 (drawing)" t)
+		("L65219" 2972 "L65219 = geomNodeRelate( pdiff_conn nwell_conn conn )" 0 16 t "y2 (drawing)" t)
+		("Metal1_d_pintext" 25 "Metal1_d_pintext = pinText( \"Metal1\" )" 0 0 t "y3 (drawing)" t)
+		("Metal1_p" 166 "Metal1_p = geomOr( Metal1_p Metal1_p_pin )" 2 4 t "y4 (drawing)" t)
+		("Metal1_p_pintext" 31 "Metal1_p_pintext = pinText( \"Metal1\" )" 0 1 t "y5 (drawing)" t)
+		("Metal1_v" 4944 "Metal1_v = groupVias(  via(Metal1_v) conn1(Metal1_p) conn2(metal1_conn) )" 1 12 t "y6 (drawing)" t)
+		("cont_ndiff" 4943 "cont_ndiff = groupVias(  via(cont_ndiff) conn1(metal1_conn) conn2(ndiff_conn) )" 1 11 t "y7 (drawing)" t)
+		("cont_pdiff" 4940 "cont_pdiff = groupVias(  via(cont_pdiff) conn1(metal1_conn) conn2(pdiff_conn) )" 1 9 t "y8 (drawing)" t)
+		("cont_poly" 4941 "cont_poly = groupVias(  via(cont_poly) conn1(metal1_conn) conn2(poly_conn) )" 1 10 t "y9 (drawing)" t)
+		("metal1_conn" 770 "metal1_conn = geomAndNot( L32159 M1Resdum )" 0 14 t "y0 (drawing)" t)
+		("ndiff_conn" 727 "ndiff_conn = geomAndNot( L46829 NPNdummy )" 0 2 t "y1 (drawing)" t)
+		("ntap" 731 "ntap = geomAnd( Nwell ndiff_conn )" 0 3 t "y2 (drawing)" t)
+		("nwell_conn" 737 "nwell_conn = geomAndNot( L59011 NPNdummy )" 0 5 t "y3 (drawing)" t)
+		("pdiff_conn" 739 "pdiff_conn = geomAndNot( L12267 NPNdummy )" 0 6 t "y4 (drawing)" t)
+		("poly_conn" 635 "poly_conn = geomAndNot( Poly Resdum )" 0 8 t "y5 (drawing)" t)
+		("psubstrate" 1109 "psubstrate = geomAndNot( L43912 NPNdummy )" 0 13 t "y6 (drawing)" t)
+		("ptap" 743 "ptap = geomAndNot( pdiff_conn Nwell )" 0 7 t "y7 (drawing)" t)
+)
+vuiVLWLocation  = '((68 476) (183 1176))

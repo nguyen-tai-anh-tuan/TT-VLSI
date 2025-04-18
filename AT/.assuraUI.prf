@@ -1,0 +1,1 @@
+assuraUI_PrfGLOBAL='(("ELW_OPTIONS" (zoomToError t zoomRatio 1.0 RuleOrderType "Order Rule File" CellOrderType "Error Count" StepType "All Errors" CommentsType t showBubbles nil showRulesFilter nil showCellsFilter nil showPreviews nil showSignOff nil showFixed nil showCellUpDown nil showLocalExplainOnly nil limitEnvEdit 100 limitShapesEdit 1000)))

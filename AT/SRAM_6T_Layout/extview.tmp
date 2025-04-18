@@ -1,0 +1,158 @@
+*
+*
+*
+*                       LINUX           Sun Apr  6 22:18:19 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT SRAM_6T_Layout vdd gnd WBL WBLB WWL Q Q~
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	WBL#1	WWL#2	Q#5	gnd#1	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD1_2	Q#11	Q~#3	gnd#13	gnd#1	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD1_3	Q~#14	Q#16	gnd#11	gnd#1	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD1_4	Q~#5	WWL#5	WBLB#1	gnd#1	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD7_1	Q#8	Q~#4	vdd#11	vdd#5	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD7_2	Q~#11	Q#14	vdd#9	vdd#1	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Ri1	WBL	WBL#2	    0.9157	$mt1	$X=1.99 $Y=4.8205
+Ri3	WBL#1	WBL#2	   15.0000	$mt1	$X=1.58 $Y=4.46
+Ri4	Q#1	Q#2	   10.5355	$mt1	$X=4.195 $Y=4.96
+Ri5	Q#2	Q#3	    0.6841	$mt1	$X=3.77 $Y=4.44
+Ri6	Q#3	Q#4	    0.5975	$mt1	$X=3.295 $Y=3.92
+Ri7	Q#4	Q#6	    0.8236	$mt1	$X=2.23 $Y=3.92
+Ri9	Q#2	Q#9	    0.4205	$mt1	$X=3.77 $Y=5.25
+Ri11	Q#3	Q#12	    0.6703	$mt1	$X=3.77 $Y=3.445
+Ri13	Q#4	Q	    0.2073	$mt1	$X=2.82 $Y=4.1
+Ri14	Q#5	Q#6	   15.0000	$mt1	$X=1.58 $Y=3.92
+Ri15	Q#8	Q#9	   15.0000	$mt1	$X=3.77 $Y=5.6
+Ri16	Q#11	Q#12	   15.0000	$mt1	$X=3.77 $Y=2.91
+Ri18	vdd#2	vdd#4	    0.5836	$mt1	$X=4.5555 $Y=6.06
+Ri19	vdd#4	vdd#6	    0.5169	$mt1	$X=4.055 $Y=6.06
+Ri21	vdd#2	vdd#8	    0.3109	$mt1	$X=4.89 $Y=5.86
+Ri22	vdd#8	vdd#9	   15.0000	$mt1	$X=4.89 $Y=5.6
+Ri23	vdd#4	vdd	    0.5006	$mt1	$X=4.28 $Y=6.46
+Ri24	vdd#6	vdd#10	    0.3109	$mt1	$X=3.23 $Y=5.86
+Ri25	vdd#10	vdd#11	   15.0000	$mt1	$X=3.23 $Y=5.6
+Ri26	vdd#1	vdd#2	    5.0000	$mt1	$X=5.16 $Y=6.06
+Ri27	vdd#5	vdd#6	    5.0000	$mt1	$X=3.5 $Y=6.06
+Ri28	WWL#3	WWL#4	   12.0354	$mt1	$X=6.6 $Y=7.07
+Ri29	WWL#4	WWL#1	    1.4881	$mt1	$X=3.08 $Y=7.28
+Ri30	WWL#4	WWL	    0.2141	$mt1	$X=3.93 $Y=7.345
+Ri32	WBLB#2	WBLB	    0.6247	$mt1	$X=6.72 $Y=3.7755
+Ri33	WBLB#1	WBLB#2	   15.0000	$mt1	$X=7.16 $Y=3.92
+Ri35	Q~#6	Q~#8	    0.6703	$mt1	$X=6.6255 $Y=4.46
+Ri36	Q~#8	Q~#9	    0.4457	$mt1	$X=5.79 $Y=4.46
+Ri37	Q~#9	Q~#10	8.415E-02	$mt1	$X=5.43 $Y=4.39
+Ri38	Q~#10	Q~#1	    0.5139	$mt1	$X=5.02 $Y=4.32
+Ri39	Q~#8	Q~	    0.1139	$mt1	$X=6.15 $Y=4.35
+Ri40	Q~#9	Q~#12	    0.7539	$mt1	$X=5.43 $Y=5
+Ri42	Q~#10	Q~#15	    0.9503	$mt1	$X=5.43 $Y=3.635
+Ri44	Q~#5	Q~#6	   15.0000	$mt1	$X=7.16 $Y=4.46
+Ri45	Q~#11	Q~#12	   15.0000	$mt1	$X=5.43 $Y=5.6
+Ri46	Q~#14	Q~#15	   15.0000	$mt1	$X=5.43 $Y=2.89
+Ri48	gnd#2	gnd#4	    3.4002	$mt1	$X=7.1055 $Y=1.94
+Ri50	gnd#4	gnd#6	    0.5125	$mt1	$X=4.61 $Y=2.43
+Ri51	gnd#6	gnd#7	    0.5968	$mt1	$X=4.11 $Y=2.45
+Ri53	gnd#7	gnd#9	    3.2536	$mt1	$X=3.5 $Y=2.235
+Ri54	gnd#9	gnd#1	    5.0000	$mt1	$X=1.12 $Y=4.19
+Ri55	gnd#4	gnd#10	    0.3109	$mt1	$X=4.89 $Y=2.63
+Ri56	gnd#10	gnd#11	   15.0000	$mt1	$X=4.89 $Y=2.89
+Ri57	gnd#6	gnd	    0.7323	$mt1	$X=4.39 $Y=2.5
+Ri58	gnd#7	gnd#12	    0.3109	$mt1	$X=3.23 $Y=2.65
+Ri59	gnd#12	gnd#13	   15.0000	$mt1	$X=3.23 $Y=2.91
+Ri60	gnd#1	gnd#2	    5.0000	$mt1	$X=7.62 $Y=4.19
+Ri61	gnd#1	gnd#4	    5.0000	$mt1	$X=5.16 $Y=2.43
+Ri62	gnd#1	gnd#7	    5.0000	$mt1	$X=3.5 $Y=2.45
+Rj1	WWL#1	WWL#2	  308.1308	$poly	$X=2.23 $Y=5.41
+Rj2	Q~#1	Q~#2	  109.6440	$poly	$X=4.02 $Y=4.32
+Rj3	Q~#2	Q~#3	  134.2345	$poly	$X=3.5 $Y=3.62
+Rj4	Q~#2	Q~#4	  121.2345	$poly	$X=3.5 $Y=4.955
+Rj5	Q#14	Q#15	   57.6172	$poly	$X=5.16 $Y=5.275
+Rj6	Q#15	Q#1	   42.4526	$poly	$X=4.925 $Y=4.96
+Rj7	Q#15	Q#16	  200.6172	$poly	$X=5.16 $Y=3.93
+Rj8	WWL#5	WWL#3	  304.1308	$poly	$X=6.875 $Y=4.19
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	5.324E-17	$X=4.2775 $Y=6.6875
+C2	WBL	gnd	7.465E-17	$X=1.7275 $Y=5.1275
+C3	WBLB	gnd	5.289E-17	$X=6.717 $Y=3.54
+C4	WWL	gnd	3.534E-17	$X=3.9275 $Y=7.585
+C5	Q	gnd	3.243E-17	$X=2.8175 $Y=4.2175
+C6	Q~	gnd	2.478E-17	$X=6.147 $Y=4.2625
+C7	Q~#4	gnd	8.646E-17	$X=3.4975 $Y=5.395
+C8	Q#14	gnd	5.531E-17	$X=5.157 $Y=5.5555
+C9	WWL#2	gnd	1.869E-16	$X=2.2275 $Y=4.643
+C10	Q~#3	gnd	9.685E-17	$X=3.4975 $Y=3.143
+C11	Q#16	gnd	1.288E-16	$X=5.157 $Y=3.288
+C12	WWL#5	gnd	1.748E-16	$X=6.597 $Y=4.7025
+C13	WWL#1	gnd	2.489E-16	$X=2.228 $Y=6.4705
+C14	Q~#1	gnd	1.255E-16	$X=4.5045 $Y=4.318
+C15	Q#1	gnd	8.550E-17	$X=4.541 $Y=4.9575
+C16	WWL#3	gnd	2.790E-16	$X=6.288 $Y=6.703
+C17	vdd#5	gnd	2.524E-17	$X=3.498 $Y=5.8545
+C18	vdd#1	gnd	2.617E-17	$X=5.1565 $Y=5.8545
+C19	WBL#1	gnd	3.348E-18	$X=1.5775 $Y=4.4075
+C20	vdd#10	gnd	2.205E-17	$X=3.2275 $Y=5.6675
+C21	vdd#8	gnd	2.987E-17	$X=4.887 $Y=5.6675
+C22	WBL#2	gnd	8.359E-17	$X=1.6925 $Y=4.4575
+C23	Q#2	gnd	8.002E-17	$X=3.7675 $Y=4.843
+C24	Q#3	gnd	9.796E-17	$X=3.7675 $Y=3.941
+C25	Q#4	gnd	7.323E-17	$X=2.8175 $Y=3.9775
+C26	Q#6	gnd	7.441E-17	$X=1.8425 $Y=3.9175
+C27	Q#9	gnd	4.584E-17	$X=3.7675 $Y=5.4825
+C28	Q#12	gnd	6.866E-17	$X=3.7675 $Y=3.115
+C29	Q~#2	gnd	1.579E-16	$X=3.4975 $Y=4.2855
+C30	vdd#2	gnd	3.961E-17	$X=4.887 $Y=5.988
+C31	vdd#4	gnd	5.043E-17	$X=4.2775 $Y=6.227
+C32	vdd#6	gnd	3.682E-17	$X=3.67 $Y=6.0575
+C33	Q#15	gnd	1.390E-16	$X=5.157 $Y=4.601
+C34	WWL#4	gnd	1.896E-16	$X=4.7045 $Y=7.2875
+C35	WBLB#2	gnd	6.960E-17	$X=7.027 $Y=3.9175
+C36	Q~#6	gnd	6.465E-17	$X=6.95 $Y=4.4575
+C37	Q~#8	gnd	5.335E-17	$X=6.147 $Y=4.433
+C38	Q~#9	gnd	6.763E-17	$X=5.427 $Y=4.6925
+C39	Q~#10	gnd	7.102E-17	$X=5.427 $Y=4.011
+C40	Q~#12	gnd	6.059E-17	$X=5.427 $Y=5.3575
+C41	Q~#15	gnd	7.668E-17	$X=5.427 $Y=3.2005
+*
+*
+.ENDS SRAM_6T_Layout
+*

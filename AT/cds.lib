@@ -1,0 +1,3 @@
+SOFTINCLUDE /home/buet/cadence/IC615/share/cdssetup/cds.lib
+DEFINE NguyenTaiAnhTuan /home/buet/Desktop/AT/NguyenTaiAnhTuan
+DEFINE avTech /home/buet/cadence/ASSURA41/tools/assura/etc/avtech/avTech

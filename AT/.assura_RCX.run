@@ -1,0 +1,3 @@
+#!/bin/sh -f
+/home/buet/cadence/ASSURA41/tools/assura/bin/assura /home/buet/Desktop/AT/rcx.SRAM_8T_layout.rsf -cdslib /home/buet/Desktop/AT/cds.lib
+exit $?

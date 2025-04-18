@@ -1,0 +1,35 @@
+@(#)$CDS: nvn version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:13 (sjlin80) $
+sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
+run on cadence at Tue Mar 18 21:40:39 2025
+
+Schematic                                    | Layout                                    | Status
+---------------------------------------------------------------------------------------------------
+inverter_layout_bc schematic NguyenTaiAnhTuan| inverter_layout_bc layout NguyenTaiAnhTuan| matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:NguyenTaiAnhTuan
+  Cell   :inverter_layout_bc
+  View   :schematic
+
+Layout:
+  Library:NguyenTaiAnhTuan
+  Cell   :inverter_layout_bc
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

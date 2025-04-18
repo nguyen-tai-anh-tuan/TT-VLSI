@@ -1,0 +1,74 @@
+*
+*
+*
+*                       LINUX           Tue Mar 18 21:48:16 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT inverter_layout_bc Vdd Gnd Vin Vout
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	Vout#2	Vin#4	Gnd#5	Gnd#2	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD7_1	Vout#5	Vin#2	Vdd#5	Vdd#2	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Ri1	Vin#1	Vin	   10.3263	$mt1	$X=0.305 $Y=1.39
+Ri2	Vout	Vout#1	    0.6955	$mt1	$X=2.1855 $Y=1.39
+Ri3	Vout#1	Vout#3	    0.3272	$mt1	$X=1.64 $Y=1.17
+Ri5	Vout#1	Vout#6	    0.2805	$mt1	$X=1.64 $Y=1.575
+Ri7	Vout#2	Vout#3	   15.0000	$mt1	$X=1.64 $Y=0.89
+Ri8	Vout#5	Vout#6	   15.0000	$mt1	$X=1.64 $Y=1.82
+Ri9	Vdd	Vdd#1	    0.2301	$mt1	$X=1.1 $Y=2.5
+Ri11	Vdd#1	Vdd#4	    0.2787	$mt1	$X=1.1 $Y=2.08
+Ri12	Vdd#4	Vdd#5	   15.0000	$mt1	$X=1.1 $Y=1.82
+Ri13	Vdd#2	Vdd#1	    5.0000	$mt1	$X=1.37 $Y=2.28
+Ri14	Gnd	Gnd#1	    0.1834	$mt1	$X=1.1 $Y=0.245
+Ri16	Gnd#1	Gnd#4	    0.2787	$mt1	$X=1.1 $Y=0.63
+Ri17	Gnd#4	Gnd#5	   15.0000	$mt1	$X=1.1 $Y=0.89
+Ri18	Gnd#2	Gnd#1	    5.0000	$mt1	$X=1.37 $Y=0.43
+Rj1	Vin#2	Vin#3	   36.6172	$poly	$X=1.37 $Y=1.6
+Rj2	Vin#3	Vin#1	   70.4526	$poly	$X=0.995 $Y=1.39
+Rj3	Vin#3	Vin#4	   43.6172	$poly	$X=1.37 $Y=1.145
+*
+*       CAPACITOR CARDS
+*
+*
+C1	Vdd	Gnd	2.227E-16	$X=1.972 $Y=2.718
+C2	Vin	Gnd	4.057E-17	$X=0.15 $Y=1.3875
+C3	Vout	Gnd	6.159E-17	$X=2.485 $Y=1.3875
+C4	Vin#2	Gnd	4.490E-17	$X=1.3675 $Y=1.828
+C5	Vin#4	Gnd	4.827E-17	$X=1.3675 $Y=0.895
+C6	Vin#1	Gnd	9.863E-17	$X=0.5165 $Y=1.3875
+C7	Vdd#2	Gnd	2.800E-17	$X=1.3675 $Y=2.075
+C8	Vdd#1	Gnd	1.643E-17	$X=1.4575 $Y=2.2775
+C9	Vdd#4	Gnd	2.605E-17	$X=1.0975 $Y=1.8875
+C10	Vin#3	Gnd	5.167E-17	$X=1.3675 $Y=1.3705
+C11	Vout#1	Gnd	6.087E-17	$X=1.9395 $Y=1.3875
+C12	Vout#3	Gnd	3.630E-17	$X=1.6375 $Y=0.9675
+C13	Vout#6	Gnd	3.315E-17	$X=1.6375 $Y=1.755
+*
+*
+.ENDS inverter_layout_bc
+*

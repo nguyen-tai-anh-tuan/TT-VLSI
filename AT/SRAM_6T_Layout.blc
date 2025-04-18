@@ -1,0 +1,5 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"SRAM_6T_Layout layout NguyenTaiAnhTuan" "SRAM_6T_Layout schematic NguyenTaiAnhTuan" "nmos1v(MOS)" "pmos1v(MOS)"
+Devices filtered from layout
+"TIE"

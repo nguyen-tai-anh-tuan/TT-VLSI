@@ -1,0 +1,74 @@
+*
+*
+*
+*                       LINUX           Fri Mar 14 14:00:59 2025
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT inverter_layout Vdd Gnd Vin Vout
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	Vout#2	Vin#4	Gnd#5	Gnd#2	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD7_1	Vout#5	Vin#2	Vdd#5	Vdd#2	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Ri1	Vin#1	Vin	   10.4275	$mt1	$X=0.365 $Y=1.5
+Ri2	Vout	Vout#1	    0.7288	$mt1	$X=2.2905 $Y=1.5
+Ri3	Vout#1	Vout#3	    0.3739	$mt1	$X=1.72 $Y=1.245
+Ri5	Vout#1	Vout#6	    0.5472	$mt1	$X=1.72 $Y=1.885
+Ri7	Vout#2	Vout#3	   15.0000	$mt1	$X=1.72 $Y=0.93
+Ri8	Vout#5	Vout#6	   15.0000	$mt1	$X=1.72 $Y=2.33
+Ri9	Vdd	Vdd#1	    0.2233	$mt1	$X=1.18 $Y=3.005
+Ri11	Vdd#1	Vdd#4	    0.2787	$mt1	$X=1.18 $Y=2.59
+Ri12	Vdd#4	Vdd#5	   15.0000	$mt1	$X=1.18 $Y=2.33
+Ri13	Vdd#2	Vdd#1	    5.0000	$mt1	$X=1.45 $Y=2.79
+Ri14	Gnd	Gnd#1	    0.2033	$mt1	$X=1.18 $Y=0.27
+Ri16	Gnd#1	Gnd#4	    0.2787	$mt1	$X=1.18 $Y=0.67
+Ri17	Gnd#4	Gnd#5	   15.0000	$mt1	$X=1.18 $Y=0.93
+Ri18	Gnd#2	Gnd#1	    5.0000	$mt1	$X=1.45 $Y=0.47
+Rj1	Vin#2	Vin#3	   76.6172	$poly	$X=1.45 $Y=1.91
+Rj2	Vin#3	Vin#1	   61.1857	$poly	$X=1.12 $Y=1.5
+Rj3	Vin#3	Vin#4	   50.6172	$poly	$X=1.45 $Y=1.22
+*
+*       CAPACITOR CARDS
+*
+*
+C1	Vdd	Gnd	2.276E-16	$X=2.079 $Y=3.216
+C2	Vin	Gnd	4.590E-17	$X=0.2 $Y=1.497
+C3	Vout	Gnd	6.339E-17	$X=2.603 $Y=1.497
+C4	Vin#2	Gnd	6.554E-17	$X=1.4475 $Y=2.2375
+C5	Vin#4	Gnd	5.181E-17	$X=1.4475 $Y=0.952
+C6	Vin#1	Gnd	9.043E-17	$X=0.703 $Y=1.5045
+C7	Vdd#2	Gnd	2.808E-17	$X=1.4515 $Y=2.5805
+C8	Vdd#1	Gnd	1.573E-17	$X=1.538 $Y=2.787
+C9	Vdd#4	Gnd	2.224E-17	$X=1.1775 $Y=2.397
+C10	Vin#3	Gnd	7.102E-17	$X=1.4475 $Y=1.5625
+C11	Vout#1	Gnd	7.995E-17	$X=1.718 $Y=1.562
+C12	Vout#3	Gnd	3.920E-17	$X=1.7175 $Y=1.0245
+C13	Vout#6	Gnd	4.899E-17	$X=1.7175 $Y=2.1645
+*
+*
+.ENDS inverter_layout
+*

@@ -1,0 +1,16 @@
+
+
+;----------------------------------------------------------------------------
+; vldb RSF file
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+; form additions
+avSimName = "auLvs"
+avDisableWildcardPG = nil
+avLibName  = "NguyenTaiAnhTuan"
+avCellName = "inverter_layout_bc"
+avViewName = "schematic"
+avViewList = "auLvs schematic symbol"
+avStopList = "auLvs"
+avVldbFile = "/home/buet/Desktop/AT/inverter_layout_bc.sdb"

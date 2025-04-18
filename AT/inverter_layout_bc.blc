@@ -1,0 +1,5 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"inverter_layout_bc layout NguyenTaiAnhTuan" "inverter_layout_bc schematic NguyenTaiAnhTuan" "nmos1v(MOS)" "pmos1v(MOS)"
+Devices filtered from layout
+"TIE"

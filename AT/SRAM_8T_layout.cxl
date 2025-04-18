@@ -1,0 +1,32 @@
+C pmos1v(MOS) pmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C nmos1v(MOS) nmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "SRAM_8T_layout schematic NguyenTaiAnhTuan" "SRAM_8T_layout layout NguyenTaiAnhTuan"
+N WBL WBL
+N gnd gnd
+N WWL WWL
+N vdd vdd
+N WBLB WBLB
+N OUTPUT OUTPUT
+N RWL RWL
+N RBL RBL
+N Q Q
+N Q~ Q~
+I NM5 avD1_6
+I NM4 avD1_5
+I NM3 avD1_4
+I NM1 avD1_3
+I NM0 avD1_2
+I NM2 avD1_1
+I PM1 avD7_2
+I PM0 avD7_1
+

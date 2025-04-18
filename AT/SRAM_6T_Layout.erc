@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'SRAM_6T_layout layout NguyenTaiAnhTuan':
+  info: Assign pin label "WBL" at (0.5250, 3.0800) to layer `Metal1_p'.
+  info: Assign pin label "Q~" at (3.5700, 1.6750) to layer `Metal1_p'.
+  info: Assign pin label "WBLB" at (4.1500, 1.2950) to layer `Metal1_p'.
+  info: Assign pin label "vdd" at (1.7250, 4.2100) to layer `Metal1_p'.
+  info: Assign pin label "WWL" at (2.4250, 4.2400) to layer `Metal1_p'.
+
+***** End of Label Report *****
+
